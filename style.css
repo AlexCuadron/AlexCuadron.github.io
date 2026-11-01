@@ -14,7 +14,11 @@ main { flex: 1; min-width: 0; }
 h2 { color: var(--accent); font-size: 1.4rem; border-bottom: 1px solid var(--rule); padding-bottom: 6px; margin: 36px 0 14px; }
 section:first-child h2 { margin-top: 0; }
 .news, .pubs, .exp { list-style: none; padding: 0; margin: 0; }
-.news li { display: flex; gap: 14px; margin: 8px 0; }
+.year { font-size: 1rem; color: #374151; margin: 18px 0 6px; font-weight: 700; }
+.news li { display: flex; gap: 16px; padding: 9px 0; border-bottom: 1px solid #f1f3f5; }
+.news li:last-child { border-bottom: none; }
+.news li p { margin: 0; }
+.news .date { flex: 0 0 44px; font-weight: 600; color: var(--accent); }
 .date { flex: 0 0 90px; color: var(--muted); font-variant-numeric: tabular-nums; font-size: .92rem; padding-top: 1px; }
 .pubs li { display: flex; gap: 14px; margin: 14px 0; }
 .venue { flex: 0 0 110px; font-weight: 700; color: var(--accent); font-size: .85rem; padding-top: 2px; }
