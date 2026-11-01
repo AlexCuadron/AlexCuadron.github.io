@@ -11,7 +11,7 @@
 <div class="layout">
 
 <aside class="sidebar">
-  <img class="avatar" src="https://avatars.githubusercontent.com/u/33360440?v=4" alt="Alejandro Cuadrón Lafuente">
+  <img class="avatar" src="profile.jpg" alt="Alejandro Cuadrón Lafuente">
   <h1>Alejandro Cuadrón Lafuente</h1>
   <p class="role">Applied Scientist @ Amazon AGI</p>
   <ul class="links">
@@ -28,6 +28,12 @@
 <section id="about">
   <h2>About Me</h2>
   <p>Hi! I'm an Applied Scientist at <b>Amazon AGI</b>, where I work on <b>post-training, evaluation and recursive self-improvement of LLM agents</b>. My research asks where frontier agents fail and how to turn those failures into training signal: I build evaluations that expose them, generate the data that fixes them, and increasingly let models run that loop themselves.</p>
+  <p>At Amazon, I work on three connected things:</p>
+  <ul>
+    <li><b>Recursive self-improvement for data.</b> I build systems in which models find their own failures on agentic tasks and generate verified training data to fix them. They have produced thousands of verified tasks across tool calling, software engineering, finance and inventory management, now feeding the training of Amazon's next flagship model.</li>
+    <li><b>Asynchronous RL at scale.</b> I work on agentic RL post-training of 300B+ parameter MoE models on hundreds of GPUs, extending the open-source <a href="https://github.com/THUDM/slime">Slime</a> and Miles frameworks: off-policy correction for stale rollouts, MoE routing replay and faster rollout serving. Before that, I worked on the agentic RL pipeline behind <a href="https://www.amazon.science/publications/amazon-nova-2-multimodal-reasoning-and-generation-models">Nova 2 Lite</a>.</li>
+    <li><b>Evaluations that find real failures.</b> <a href="https://github.com/amazon-agi/tau2-bench-verified">τ²-Bench-Verified</a> fixed the standard tool-use agent benchmark (now part of τ³-bench), and the fixes became training data that brought Nova 2 Lite on par with Claude Sonnet 4.5. <a href="https://openreview.net/pdf?id=0HaWVN57Gp">BOBA-Bench</a> shows that coding agents complete 95% of requests one at a time but only 51% when each builds on the last: they are only as reliable as the verification they can reach.</li>
+  </ul>
   <p>Before Amazon, I did my graduate studies at <b>ETH Zurich</b> and <b>UC Berkeley</b>, where I was a researcher in the <a href="https://sky.cs.berkeley.edu/">Sky Computing Lab</a> advised by <a href="https://people.eecs.berkeley.edu/~istoica/">Prof. Ion Stoica</a>. There I led the study of <a href="https://arxiv.org/abs/2502.08235">overthinking in reasoning models</a> and contributed to <a href="https://github.com/OpenHands/OpenHands">OpenHands</a>. Earlier, I was a student researcher at IBM Research Zurich, and I received my B.Eng. in Computer Engineering from Universidad Politécnica de Madrid.</p>
   <p>I'm broadly interested in:</p>
   <ul>
