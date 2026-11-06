@@ -37,3 +37,12 @@ footer { margin-top: 48px; color: var(--muted); font-size: .85rem; border-top: 1
   .news li, .pubs li, .exp li { flex-direction: column; gap: 0; }
   .date, .venue { flex: none; }
 }
+
+.job { margin: 12px 0 16px; }
+.jobhead { font-size: 1rem; margin-bottom: 4px; }
+.jdate { float: right; color: var(--muted); font-size: .92rem; }
+.job ul { margin: 4px 0 0; padding-left: 1.3em; }
+.job li { margin: 3px 0; }
+.pubs li { display: flex; justify-content: space-between; gap: 16px; margin: 8px 0; align-items: baseline; }
+.pubmeta { flex: 0 0 auto; color: var(--muted); font-size: .88rem; white-space: nowrap; }
+@media (max-width: 800px) { .jdate { float: none; display: block; } .pubs li { flex-direction: column; gap: 0; } }

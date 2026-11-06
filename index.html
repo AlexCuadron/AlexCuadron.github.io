@@ -28,69 +28,94 @@
 <main>
 <section id="about">
   <h2>About Me</h2>
-  <p>Hi! I'm an Applied Scientist at <b>Amazon AGI</b>, where I work on <b>post-training, evaluation and recursive self-improvement of LLM agents</b>. My research asks where frontier agents fail and how to turn those failures into training signal: I build evaluations that expose them, generate the data that fixes them, and increasingly let models run that loop themselves.</p>
-  <p>At Amazon, I work on three connected things:</p>
-  <ul>
-    <li><b>Recursive self-improvement for data.</b> I build systems in which models find their own failures on agentic tasks and generate verified training data to fix them. They have produced thousands of verified tasks across tool calling, software engineering, finance and inventory management, now feeding the training of Amazon's next flagship model.</li>
-    <li><b>Asynchronous RL at scale.</b> I work on agentic RL post-training of 300B+ parameter MoE models on hundreds of GPUs, extending the open-source <a href="https://github.com/THUDM/slime">Slime</a> and Miles frameworks: off-policy correction for stale rollouts, MoE routing replay and faster rollout serving. Before that, I worked on the agentic RL pipeline behind <a href="https://www.amazon.science/publications/amazon-nova-2-multimodal-reasoning-and-generation-models">Nova 2 Lite</a>.</li>
-    <li><b>Evaluations that find real failures.</b> <a href="https://github.com/amazon-agi/tau2-bench-verified">τ²-Bench-Verified</a> fixed the standard tool-use agent benchmark; most of the official τ³-bench's task fixes come from it, and the fixes became training data that brought Nova 2 Lite on par with Claude Sonnet 4.5. <a href="https://openreview.net/pdf?id=0HaWVN57Gp">BOBA-Bench</a> shows that coding agents complete 95% of requests one at a time but only 51% when each builds on the last: they are only as reliable as the verification they can reach.</li>
-  </ul>
-  <p>Before Amazon, I did my graduate studies at <b>ETH Zurich</b> and <b>UC Berkeley</b>, where I was a researcher in the <a href="https://sky.cs.berkeley.edu/">Sky Computing Lab</a> advised by <a href="https://people.eecs.berkeley.edu/~istoica/">Prof. Ion Stoica</a>. There I led the study of <a href="https://arxiv.org/abs/2502.08235">overthinking in reasoning models</a> and contributed to <a href="https://github.com/OpenHands/OpenHands">OpenHands</a>. Earlier, I was a student researcher at IBM Research Zurich, and I received my B.Eng. in Computer Engineering from Universidad Politécnica de Madrid.</p>
-  <p>Feel free to reach out about research or collaborations at <a href="mailto:alex.cl.2000@gmail.com">alex.cl.2000@gmail.com</a>. My CV is <a href="cv.pdf">here (PDF)</a>.</p>
+  <p>I'm an Applied Scientist at <b>Amazon AGI</b> working on evaluation, recursive self-improvement (RSI) and RL post-training of LLM agents. I build evaluations that expose where agents fail, generate the data that fixes those failures, and increasingly let models run that loop themselves.</p>
+  <p>Before Amazon, I did my graduate studies at <b>ETH Zurich</b> and <b>UC Berkeley</b>, where I was a researcher in the <a href="https://sky.cs.berkeley.edu/">Sky Computing Lab</a> with <a href="https://people.eecs.berkeley.edu/~istoica/">Ion Stoica</a> and <a href="https://people.eecs.berkeley.edu/~jegonzal/">Joey Gonzalez</a>. My CV is <a href="cv.pdf">here (PDF)</a>.</p>
 </section>
 
 <section id="news">
   <h2>News</h2>
-  <h3 class="year">2026</h3>
   <ul class="news">
-    <li><span class="date">Oct</span><p>Placed in the <b>top 1%</b> of Meta's <a href="https://openkernelchallenge.dev/leaderboard">Open Kernel Challenge</a> with an RSI framework I built, with no prior CUDA experience.</p></li>
-    <li><span class="date">Sep</span><p>Released <a href="https://openreview.net/pdf?id=0HaWVN57Gp">BOBA-Bench</a>: coding agents complete 95% of requests one at a time, but only 51% when each request builds on the last.</p></li>
-    <li><span class="date">Apr</span><p>Presented BOBA-Bench at the Amazon AGI booth at ICLR 2026.</p></li>
-    <li><span class="date">Mar</span><p>Sierra released <a href="https://github.com/sierra-research/tau2-bench/releases/tag/v1.0.0">τ³-bench</a>. Most of its 75+ task fixes come directly from τ²-Bench-Verified, and Sierra credits SABER in its <a href="https://taubench.com/blog/tau3-task-fixes.html">blog post</a> and <a href="https://github.com/sierra-research/tau2-bench">README</a>.</p></li>
-    <li><span class="date">Mar</span><p><a href="https://arxiv.org/abs/2512.07850">SABER</a> accepted at the ICLR 2026 Workshop on Memory for LLM-Based Agentic Systems (MemAgents).</p></li>
-    <li><span class="date">Jan</span><p><a href="https://arxiv.org/abs/2510.05688">vAttention</a> accepted at ICLR 2026.</p></li>
-    <li><span class="date">Jan</span><p><a href="https://arxiv.org/abs/2502.03771">vCache</a> accepted at ICLR 2026.</p></li>
-  </ul>
-  <h3 class="year">2025</h3>
-  <ul class="news">
-    <li><span class="date">Dec</span><p><a href="https://www.amazon.science/publications/amazon-nova-2-multimodal-reasoning-and-generation-models">Amazon Nova 2</a> launched. I worked on agentic RL post-training for Nova 2 Lite.</p></li>
-    <li><span class="date">Nov</span><p>Released <a href="https://github.com/amazon-agi/tau2-bench-verified">τ²-Bench-Verified</a>, a corrected version of the standard tool-use agent benchmark, together with <a href="https://arxiv.org/abs/2512.07850">SABER</a>.</p></li>
-    <li><span class="date">Jul</span><p>Joined Amazon AGI as an Applied Scientist.</p></li>
-    <li><span class="date">May</span><p><a href="https://arxiv.org/abs/2412.14468">HashAttention</a> accepted at ICML 2025.</p></li>
-    <li><span class="date">Mar</span><p>Interviewed by <a href="https://spectrum.ieee.org/reasoning-in-ai">IEEE Spectrum</a> about overthinking in reasoning models.</p></li>
-    <li><span class="date">Feb</span><p>Released <a href="https://arxiv.org/abs/2502.08235">The Danger of Overthinking</a>, on reasoning models that think instead of acting.</p></li>
-    <li><span class="date">Jan</span><p>Showed that OpenAI's o1 solves 30% of SWE-bench Verified, not the reported 48.9% (<a href="https://x.com/Alex_Cuadron/status/1876017241042587964">thread</a>), covered by <a href="https://the-decoder.com/new-o1-benchmark-raises-more-questions-about-ai-benchmarking-in-general/">The Decoder</a>.</p></li>
-    <li><span class="date">Jan</span><p><a href="https://arxiv.org/abs/2410.12784">JudgeBench</a> accepted at ICLR 2025.</p></li>
-  </ul>
-</section>
-
-<section id="publications">
-  <h2>Publications</h2>
-  <p class="muted">Full list on <a href="https://scholar.google.com/citations?user=XLzKewQAAAAJ">Google Scholar</a>. <span class="me-key">A. Cuadron</span> marks my name.</p>
-  <ul class="pubs">
-    <li><span class="venue">Under review</span><div><a href="https://openreview.net/pdf?id=0HaWVN57Gp">Built on Broken Assumptions (BOBA): Why Coding Agents Cannot Be Left Alone</a><br><span class="authors"><span class="me">A. Cuadron</span> et al.</span> <span class="tag">ICLR 2027 submission</span></div></li>
-    <li><span class="venue">ICLR 2026</span><div><a href="https://arxiv.org/abs/2510.05688">vAttention: Verified Sparse Attention</a><br><span class="authors">A. Desai, K. K. Agrawal, S. Yang, <span class="me">A. Cuadron</span>, L. G. Schroeder, M. Zaharia, J. E. Gonzalez, I. Stoica</span></div></li>
-    <li><span class="venue">ICLR 2026</span><div><a href="https://arxiv.org/abs/2502.03771">vCache: Verified Semantic Prompt Caching</a><br><span class="authors">L. G. Schroeder, A. Desai, <span class="me">A. Cuadron</span>, K. Chu, S. Liu, M. Zhao, S. Krusche, A. Kemper, M. Zaharia, J. E. Gonzalez</span></div></li>
-    <li><span class="venue">ICLR 2026 W</span><div><a href="https://arxiv.org/abs/2512.07850">SABER: Small Actions, Big Errors — Safeguarding Mutating Steps in LLM Agents</a><br><span class="authors"><span class="me">A. Cuadron</span>, P. Yu, Y. Liu, A. Gupta</span> <span class="tag">MemAgents workshop</span></div></li>
-    <li><span class="venue">Tech report</span><div><a href="https://www.amazon.science/publications/amazon-nova-2-multimodal-reasoning-and-generation-models">Amazon Nova 2: Multimodal Reasoning and Generation Models</a><br><span class="authors">Amazon AGI</span> <span class="tag">contributor</span></div></li>
-    <li><span class="venue">ICML 2025</span><div><a href="https://arxiv.org/abs/2412.14468">HashAttention: Semantic Sparsity for Faster Inference</a><br><span class="authors">A. Desai, S. Yang, <span class="me">A. Cuadron</span>, M. Zaharia, J. E. Gonzalez, I. Stoica</span></div></li>
-    <li><span class="venue">arXiv 2025</span><div><a href="https://arxiv.org/abs/2502.08235">The Danger of Overthinking: Examining the Reasoning-Action Dilemma in Agentic Tasks</a><br><span class="authors"><span class="me">A. Cuadron</span>, D. Li, W. Ma, X. Wang, Y. Wang, S. Zhuang, S. Liu, L. G. Schroeder, T. Xia, H. Mao, N. Thumiger, A. Desai, I. Stoica, A. Klimovic, G. Neubig, J. E. Gonzalez</span></div></li>
-    <li><span class="venue">ICLR 2025</span><div><a href="https://arxiv.org/abs/2410.12784">JudgeBench: A Benchmark for Evaluating LLM-Based Judges</a><br><span class="authors">S. Tan, S. Zhuang, K. Montgomery, W. Y. Tang, <span class="me">A. Cuadron</span>, C. Wang, R. A. Popa, I. Stoica</span></div></li>
+    <li><span class="date">Nov 2026</span><p>Placed <b>5th of 2,000+ teams</b> in Meta's <a href="https://openkernelchallenge.dev/leaderboard">Open Kernel Challenge</a> with an RSI framework I built, with no prior CUDA experience.</p></li>
+    <li><span class="date">Nov 2026</span><p>Released <a href="https://arxiv.org/abs/2611.02207v1">BOBA-Bench</a>: coding agents solve 95% of tasks alone but only 51% when tasks are chained.</p></li>
+    <li><span class="date">Mar 2026</span><p>Sierra released <a href="https://github.com/sierra-research/tau2-bench/releases/tag/v1.0.0">τ³-bench</a> with the fixes from τ²-Bench-Verified, crediting SABER in its <a href="https://taubench.com/blog/tau3-task-fixes.html">blog post</a>.</p></li>
+    <li><span class="date">Jan 2026</span><p><a href="https://arxiv.org/abs/2510.05688">vAttention</a> and <a href="https://arxiv.org/abs/2502.03771">vCache</a> accepted at ICLR 2026, and <a href="https://arxiv.org/abs/2512.07850">SABER</a> at an ICLR 2026 workshop.</p></li>
+    <li><span class="date">Dec 2025</span><p><a href="https://www.amazon.science/publications/amazon-nova-2-multimodal-reasoning-and-generation-models">Amazon Nova 2</a> launched. I contributed RL environments and SFT tool-use data to Nova 2 Lite.</p></li>
+    <li><span class="date">Jul 2025</span><p>Joined Amazon AGI as an Applied Scientist.</p></li>
+    <li><span class="date">May 2025</span><p><a href="https://arxiv.org/abs/2412.14468">HashAttention</a> accepted at ICML 2025.</p></li>
+    <li><span class="date">Feb 2025</span><p>Released <a href="https://arxiv.org/abs/2502.08235">The Danger of Overthinking</a>, later covered by <a href="https://spectrum.ieee.org/reasoning-in-ai">IEEE Spectrum</a>.</p></li>
+    <li><span class="date">Jan 2025</span><p>Showed that OpenAI's o1 solves 30% of SWE-bench Verified, not the reported 48.9% (<a href="https://x.com/Alex_Cuadron/status/1876017241042587964">thread</a>), covered by <a href="https://the-decoder.com/new-o1-benchmark-raises-more-questions-about-ai-benchmarking-in-general/">The Decoder</a>. <a href="https://arxiv.org/abs/2410.12784">JudgeBench</a> accepted at ICLR 2025.</p></li>
   </ul>
 </section>
 
 <section id="experience">
   <h2>Experience</h2>
-  <ul class="exp">
-    <li><span class="date">2025 – now</span><div><b>Amazon AGI</b>, Applied Scientist (Sunnyvale, CA)</div></li>
-    <li><span class="date">2024 – 2025</span><div><b>UC Berkeley, Sky Computing Lab</b>, Research Scholar with Ion Stoica</div></li>
-    <li><span class="date">2023</span><div><b>IBM Research Zurich</b>, Student Researcher</div></li>
+  <div class="job"><div class="jobhead"><b>Amazon AGI</b> | Applied Scientist II<span class="jdate">Feb 2026 – Present</span></div>
+  <ul>
+    <li>Built evals exposing agent limits, showing coding agents solve 95% of tasks alone but 51% chained, published as <a href="https://arxiv.org/abs/2611.02207v1">BOBA-Bench</a>.</li>
+    <li>Built RSI pipelines whose tasks lifted Qwen3.6-35B-A3B above Opus 4.8 on Vending-Bench, an economic agent benchmark.</li>
+    <li>Ran a 200-agent factory that turned 41K repos into 7,000+ 20-step coding chains that teach models not to regress prior work.</li>
+    <li>Built an agentic audit that scanned 378 RL environments (55K+ tasks) for reward hacks and task correctness.</li>
+    <li>Led Amazon AGI's first asynchronous, long-context agentic RL post-training of a 300B+ MoE model on hundreds of GPUs.</li>
+  </ul></div>
+  <div class="job"><div class="jobhead"><b>Amazon AGI</b> | Applied Scientist I<span class="jdate">Jul 2025 – Jan 2026</span></div>
+  <ul>
+    <li>Found errors in τ²-bench (used by OpenAI, Anthropic, Google, Meta) and built <a href="https://github.com/amazon-agi/tau2-bench-verified">τ²-Bench-Verified</a>, whose fixes are in <a href="https://taubench.com/blog/tau3-task-fixes.html">τ³-bench</a>.</li>
+    <li>Contributed RL environments and thousands of SFT tool-use trajectories to <a href="https://www.amazon.science/publications/amazon-nova-2-multimodal-reasoning-and-generation-models">Nova 2 Lite</a>, matching Sonnet 4.5 on τ²-Bench.</li>
+    <li>Built a framework that verifies agents' state-changing actions and cleans stale context, raising task success up to 28% (<a href="https://arxiv.org/abs/2512.07850">SABER</a>).</li>
+  </ul></div>
+  <div class="job"><div class="jobhead"><b>UC Berkeley, Sky Computing Lab</b> | Research Scholar with Ion Stoica and Joey Gonzalez<span class="jdate">Jan 2024 – Jun 2025</span></div>
+  <ul>
+    <li>Showed in an extensive study of o1-style models as coding agents that they overthink instead of acting (<a href="https://arxiv.org/abs/2502.08235">paper</a>, 180+ citations), findings adopted by Meta, Microsoft, CMU, Berkeley and others and covered by The Decoder and IEEE Spectrum.</li>
+    <li>Co-created learned token hashing for long-context agents (32× fewer tokens) and led its Llama training (<a href="https://arxiv.org/abs/2412.14468">HashAttention</a>, ICML).</li>
+    <li>Developed error-guaranteed sparse attention and LLM caching for agent inference, published at ICLR as <a href="https://arxiv.org/abs/2510.05688">vAttention</a> and <a href="https://arxiv.org/abs/2502.03771">vCache</a>.</li>
+    <li>Built a coding split of right and wrong solutions that strong LLM judges barely tell apart, published as <a href="https://arxiv.org/abs/2410.12784">JudgeBench</a> at ICLR.</li>
+  </ul></div>
+</section>
+
+<section id="publications">
+  <h2>Publications</h2>
+  <p class="muted">Full list on <a href="https://scholar.google.com/citations?user=XLzKewQAAAAJ">Google Scholar</a>. Citation counts as of Nov 2026.</p>
+  <ul class="pubs">
+    <li><div><a href="https://arxiv.org/abs/2502.08235">The Danger of Overthinking: Examining the Reasoning-Action Dilemma in Agentic Tasks</a></div><span class="pubmeta">189 citations · arXiv 2025</span></li>
+    <li><div><a href="https://arxiv.org/abs/2410.12784">JudgeBench: A Benchmark for Evaluating LLM-Based Judges</a></div><span class="pubmeta">465 citations · ICLR 2025</span></li>
+    <li><div><a href="https://arxiv.org/abs/2502.03771">vCache: Verified Semantic Prompt Caching</a></div><span class="pubmeta">49 citations · ICLR 2026</span></li>
+    <li><div><a href="https://arxiv.org/abs/2412.14468">HashAttention: Semantic Sparsity for Faster Inference</a></div><span class="pubmeta">37 citations · ICML 2025</span></li>
+    <li><div><a href="https://arxiv.org/abs/2512.07850">SABER: Small Actions, Big Errors, Safeguarding Mutating Steps in LLM Agents</a></div><span class="pubmeta">31 citations · ICLR 2026 W</span></li>
+    <li><div><a href="https://arxiv.org/abs/2510.05688">vAttention: Verified Sparse Attention</a></div><span class="pubmeta">14 citations · ICLR 2026</span></li>
+    <li><div><a href="https://www.amazon.science/publications/amazon-nova-2-multimodal-reasoning-and-generation-models">Amazon Nova 2: Multimodal Reasoning and Generation Models</a></div><span class="pubmeta">14 citations · Tech. report</span></li>
+    <li><div><a href="https://arxiv.org/abs/2611.02207v1">Built on Broken Assumptions (BOBA): Why Coding Agents Cannot Be Left Alone</a></div><span class="pubmeta">Under review</span></li>
   </ul>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="job"><div class="jobhead"><b><a href="https://openkernelchallenge.dev/leaderboard">Open Kernel Challenge</a></b> (Meta × Paradigm) | 5th of 2,000+ teams<span class="jdate">2026</span></div>
+  <ul>
+    <li>Built an RSI framework that writes and optimizes GPU kernels and placed 5th with no prior CUDA experience.</li>
+    <li>Turned it into a GPU-kernel training environment that teaches models to write fast kernels out of the box.</li>
+  </ul></div>
+  <div class="job"><div class="jobhead"><b><a href="https://github.com/OpenHands/OpenHands">OpenHands</a></b> | Open-source coding agent, 90k+ GitHub stars<span class="jdate">2024 – 2025</span></div>
+  <ul>
+    <li>Built the multi-agent setting and o1 support (native function calling, reasoning effort).</li>
+  </ul></div>
+</section>
+
+<section id="education">
   <h2>Education</h2>
   <ul class="exp">
     <li><span class="date">2024 – 2025</span><div><b>UC Berkeley</b>, Graduate studies, Computer Science</div></li>
-    <li><span class="date">2022 – 2024</span><div><b>ETH Zurich</b>, M.Sc. Computer Science (Secure and Reliable Systems)</div></li>
-    <li><span class="date">2018 – 2022</span><div><b>Universidad Politécnica de Madrid</b>, B.Eng. Computer Engineering</div></li>
+    <li><span class="date">2022 – 2024</span><div><b>ETH Zurich</b>, M.Sc. Computer Science, Secure and Reliable Systems</div></li>
+    <li><span class="date">2018 – 2022</span><div><b>Universidad Politécnica de Madrid</b>, B.Eng. Computer Engineering, top 5% of class</div></li>
+  </ul>
+</section>
+
+<section id="honors">
+  <h2>Honors &amp; Awards</h2>
+  <ul>
+    <li>789 citations on <a href="https://scholar.google.com/citations?user=XLzKewQAAAAJ">Google Scholar</a> in the last two years; interviewed by <a href="https://spectrum.ieee.org/reasoning-in-ai">IEEE Spectrum</a> (2025).</li>
+    <li>Invited reviewer for NeurIPS 2026, ICLR 2026 and ICLR 2027.</li>
+    <li>Member of IEEE-Eta Kappa Nu (HKN) and founding president of Spain's first HKN chapter.</li>
+    <li>Excellence scholarships from Fundación Mutua Madrileña and the Government of Madrid.</li>
   </ul>
 </section>
 
